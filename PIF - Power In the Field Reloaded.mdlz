@@ -1,0 +1,1143 @@
+{
+  "version": 2,
+  "modelName": "PIF - Power In the Field Reloaded",
+  "nodes": [
+    {
+      "id": "class-157b6acf-a1ac-45dc-94ff-1afab23f5579",
+      "type": "class",
+      "position": {
+        "x": -105.31432404178993,
+        "y": -23.762772772393873
+      },
+      "data": {
+        "label": "PIF_User",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5ea660a4-6664-46a9-8aa2-7c884e9fff67",
+            "name": "idUser",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-c7caa2ed-7672-43e1-bde1-34d6df470d22",
+            "name": "Username",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "13",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-cff42765-aa88-4d1d-bd68-531cdbcdb054",
+            "name": "Email",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "255",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-cf3e01a1-f399-4b12-a7e3-067882345732",
+            "name": "PhoneNumber",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "20",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-ebef5e1b-a259-4603-a8c5-f84f7c3a22e8",
+            "name": "UserPassword",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "255",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-89af2db2-003c-45bc-bbf3-0b309d52d628",
+            "name": "PowercellBalance",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "0",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-84c7eb0a-a5e9-43c8-b7c3-347dfab7835a",
+            "name": "RegistrationDate",
+            "logicalName": "",
+            "type": "date",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5e8cd4b5-6754-4760-9828-00bdae42298e",
+            "name": "IsAdmin",
+            "logicalName": "",
+            "type": "boolean",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "false",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#f44336",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": -105.31432404178993,
+            "y": -23.762772772393873
+          },
+          "logical": {
+            "x": -34.10072964913401,
+            "y": -45.61189300552975
+          },
+          "physical": {
+            "x": -158.68723928030062,
+            "y": -40.88701976341858
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    },
+    {
+      "id": "class-fd161f2b-826a-4360-b8ac-20e9f652220d",
+      "type": "class",
+      "position": {
+        "x": -103.7480849458355,
+        "y": 322.01916315674856
+      },
+      "data": {
+        "label": "PIF_Purchase",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-b33d9879-30f2-49ca-9ea6-0f5a42919f34",
+            "name": "idPurchase",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-b7553215-be61-4148-83a4-7326c465563e",
+            "name": "idUser",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-4163d6d1-bf26-48bb-93c2-f57fc9561dfa",
+            "name": "PurchaseDateTime",
+            "logicalName": "",
+            "type": "datetime",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-9d3870ee-0085-4c9e-859a-7af7cb83b2f4",
+            "name": "AmountEuro",
+            "logicalName": "",
+            "type": "decimal(p,s)",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "8",
+              "scale": "2",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-35b10880-b2ba-4552-8d60-b4d3a873dddf",
+            "name": "Powercells",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#8bc34a",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": -103.7480849458355,
+            "y": 322.01916315674856
+          },
+          "logical": {
+            "x": 270.208190242131,
+            "y": 228.4166275616817
+          },
+          "physical": {
+            "x": 249.63011529744773,
+            "y": 326.8139328812378
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    },
+    {
+      "id": "class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498",
+      "type": "class",
+      "position": {
+        "x": 180.3497664423776,
+        "y": 15.338985119352728
+      },
+      "data": {
+        "label": "PIF_Activation",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-750b464d-6478-4d94-a99f-95ad6e29ba53",
+            "name": "idActivation",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-df305b32-9bcf-4ead-9c92-ea219166a302",
+            "name": "idUser",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": false,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-56229798-0058-4982-91d1-04ba9127b767",
+            "name": "idPort",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": false,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-b3d26781-f1d6-433a-b2db-2dad85d30849",
+            "name": "StartDateTime",
+            "logicalName": "",
+            "type": "datetime",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-92be491a-7da0-448d-b258-3335c001383a",
+            "name": "DurationMinutes",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-1bd6bc89-62cd-426c-83b8-4c7698530c39",
+            "name": "Success",
+            "logicalName": "",
+            "type": "boolean",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#ff9800",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": 180.3497664423776,
+            "y": 15.338985119352728
+          },
+          "logical": {
+            "x": 298.784225594399,
+            "y": -65.37423735232548
+          },
+          "physical": {
+            "x": 307.574343980963,
+            "y": -104.59093441781658
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    },
+    {
+      "id": "class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079",
+      "type": "class",
+      "position": {
+        "x": 768.7627253976767,
+        "y": 1.899445017409107
+      },
+      "data": {
+        "label": "PIF_Locations",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-c09b090c-bd77-426b-8b73-26621a56fb46",
+            "name": "idLocation",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-6474b721-57fe-47dd-8f67-7b4a980a0cc2",
+            "name": "LocationName",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "100",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-8437e73d-fb33-47fa-a67f-0272f9b08e3f",
+            "name": "LocationAddress",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "100",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-a23e4807-4769-495d-9e85-3b3db245896e",
+            "name": "LocationDescription",
+            "logicalName": "",
+            "type": "text",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-63629728-280b-42ed-a036-4d12cbda5c50",
+            "name": "Photo",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "255",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": true,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#2196f3",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": 768.7627253976767,
+            "y": 1.899445017409107
+          },
+          "logical": {
+            "x": 483.9503143774933,
+            "y": 236.30599963185404
+          },
+          "physical": {
+            "x": 830.4342882302257,
+            "y": 223.98407597819
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    },
+    {
+      "id": "class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4",
+      "type": "class",
+      "position": {
+        "x": 474.5351112638714,
+        "y": 14.452418734670431
+      },
+      "data": {
+        "label": "PIF_ChargingStation",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-d8ee768e-f682-4451-a6fc-f95102190289",
+            "name": "idChargingStation",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-1692c828-505d-46ef-be03-7fd393b3a9a5",
+            "name": "idLocation",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": false,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-22d2aa1f-b804-4d8e-9e34-8b3508b7dff1",
+            "name": "StationName",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "100",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-e8f49e10-7876-4c1c-b8f2-4db400e0623d",
+            "name": "StationDescription",
+            "logicalName": "",
+            "type": "text",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-65c203d3-320e-4b75-8418-ba7b8b07ceb3",
+            "name": "IpAddress",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "45",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#2196f3",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": 474.5351112638714,
+            "y": 14.452418734670431
+          },
+          "logical": {
+            "x": 884.067205311306,
+            "y": 207.3239178157165
+          },
+          "physical": {
+            "x": 391.52909296464617,
+            "y": 134.18256840214954
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    },
+    {
+      "id": "class-597f4569-3eff-44bf-991c-1ced66b304af",
+      "type": "class",
+      "position": {
+        "x": 334.9946256549286,
+        "y": 268.8990480269185
+      },
+      "data": {
+        "label": "PIF_Port",
+        "logicalName": "",
+        "attributes": [
+          {
+            "id": "attr-class-597f4569-3eff-44bf-991c-1ced66b304af-a39814e3-298c-48ac-a3d4-a0f324e72f44",
+            "name": "idPort",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": true,
+            "autoIncrement": true,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-597f4569-3eff-44bf-991c-1ced66b304af-ab396868-9ed8-4465-9b6c-a50b7961a226",
+            "name": "idChargingStation",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": false,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-597f4569-3eff-44bf-991c-1ced66b304af-8e80fa39-0153-4827-bd89-070b96ff347b",
+            "name": "PortNumber",
+            "logicalName": "",
+            "type": "int",
+            "typeParams": {
+              "maxLength": "",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          },
+          {
+            "id": "attr-class-597f4569-3eff-44bf-991c-1ced66b304af-40392a61-c71e-4f9a-a52b-682a4918811a",
+            "name": "PortType",
+            "logicalName": "",
+            "type": "varchar(n)",
+            "typeParams": {
+              "maxLength": "10",
+              "precision": "",
+              "scale": "",
+              "enumValues": ""
+            },
+            "defaultValue": "",
+            "nullable": false,
+            "unique": false,
+            "autoIncrement": false,
+            "visibility": {
+              "conceptual": true,
+              "logical": true,
+              "physical": true
+            }
+          }
+        ],
+        "color": "#2196f3",
+        "visibility": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        },
+        "viewPositions": {
+          "conceptual": {
+            "x": 334.9946256549286,
+            "y": 268.8990480269185
+          },
+          "logical": {
+            "x": 579.005258953501,
+            "y": -0.035299150680472735
+          },
+          "physical": {
+            "x": 837.0151753131602,
+            "y": -60.448988785389474
+          }
+        },
+        "viewPositionsMeta": {
+          "conceptual": true,
+          "logical": true,
+          "physical": true
+        }
+      },
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "interactionWidth": 20,
+      "source": "class-157b6acf-a1ac-45dc-94ff-1afab23f5579",
+      "sourceHandle": "bottom-source",
+      "target": "class-fd161f2b-826a-4360-b8ac-20e9f652220d",
+      "targetHandle": "top-target",
+      "type": "association",
+      "data": {
+        "multiplicityA": "1..1",
+        "multiplicityB": "0..*",
+        "name": "",
+        "type": "association",
+        "roleA": "make",
+        "roleB": "made by",
+        "lineStyle": "orthogonal",
+        "controlPoints": [],
+        "parallelIndex": 0,
+        "parallelCount": 1,
+        "comment": "each user may make one or more purchases\neach purchase "
+      },
+      "id": "edge-51dfe2d8-39fb-4b7b-a1d5-f269b64e8824",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-157b6acf-a1ac-45dc-94ff-1afab23f5579",
+      "sourceHandle": "right-source",
+      "target": "class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498",
+      "targetHandle": "left-target",
+      "type": "association",
+      "data": {
+        "multiplicityA": "1..1",
+        "multiplicityB": "0..*",
+        "name": "",
+        "type": "association",
+        "roleA": "start",
+        "roleB": "be started",
+        "lineStyle": "orthogonal",
+        "controlPoints": [
+          {
+            "x": 124.07525447807961,
+            "y": 85.06651578440561
+          }
+        ],
+        "parallelIndex": 0,
+        "parallelCount": 1
+      },
+      "id": "edge-c583ad2f-a168-4c84-b50e-8b474f80bfe1",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4",
+      "sourceHandle": "bottom-source",
+      "target": "class-597f4569-3eff-44bf-991c-1ced66b304af",
+      "targetHandle": "top-target",
+      "type": "association",
+      "data": {
+        "multiplicityA": "1..1",
+        "multiplicityB": "1..*",
+        "name": "",
+        "type": "association",
+        "roleA": "have",
+        "roleB": "belong to",
+        "lineStyle": "orthogonal",
+        "controlPoints": [],
+        "parallelIndex": 0,
+        "parallelCount": 1
+      },
+      "id": "edge-bd127746-a0d8-452b-82a9-9bfcc981e7da",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4",
+      "sourceHandle": "right-source",
+      "target": "class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079",
+      "targetHandle": "left-target",
+      "type": "association",
+      "data": {
+        "multiplicityA": "1..*",
+        "multiplicityB": "1..1",
+        "name": "",
+        "type": "association",
+        "roleA": "be set",
+        "roleB": "have",
+        "lineStyle": "orthogonal",
+        "controlPoints": [],
+        "parallelIndex": 0,
+        "parallelCount": 1
+      },
+      "id": "edge-a47d8da6-f898-4143-96f5-9ccdc1fe6a36",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-fd161f2b-826a-4360-b8ac-20e9f652220d",
+      "sourceHandle": "left-attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-b7553215-be61-4148-83a4-7326c465563e-source",
+      "target": "class-157b6acf-a1ac-45dc-94ff-1afab23f5579",
+      "targetHandle": "right-attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5ea660a4-6664-46a9-8aa2-7c884e9fff67-target",
+      "type": "relationship",
+      "data": {
+        "type": "relationship",
+        "lineStyle": "orthogonal",
+        "controlPoints": []
+      },
+      "id": "xy-edge__class-fd161f2b-826a-4360-b8ac-20e9f652220dleft-attr-class-fd161f2b-826a-4360-b8ac-20e9f652220d-b7553215-be61-4148-83a4-7326c465563e-source-class-157b6acf-a1ac-45dc-94ff-1afab23f5579left-attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5ea660a4-6664-46a9-8aa2-7c884e9fff67-target",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4",
+      "sourceHandle": "right-attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-1692c828-505d-46ef-be03-7fd393b3a9a5-source",
+      "target": "class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079",
+      "targetHandle": "left-attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-c09b090c-bd77-426b-8b73-26621a56fb46-target",
+      "type": "relationship",
+      "data": {
+        "type": "relationship",
+        "lineStyle": "orthogonal",
+        "controlPoints": []
+      },
+      "id": "xy-edge__class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4right-attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-1692c828-505d-46ef-be03-7fd393b3a9a5-source-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079left-attr-class-4b130c58-6d10-4f7d-b6bf-30eda4fe7079-c09b090c-bd77-426b-8b73-26621a56fb46-target",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498",
+      "sourceHandle": "left-attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-df305b32-9bcf-4ead-9c92-ea219166a302-source",
+      "target": "class-157b6acf-a1ac-45dc-94ff-1afab23f5579",
+      "targetHandle": "right-attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5ea660a4-6664-46a9-8aa2-7c884e9fff67-target",
+      "type": "relationship",
+      "data": {
+        "type": "relationship",
+        "lineStyle": "orthogonal",
+        "controlPoints": []
+      },
+      "id": "xy-edge__class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498left-attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-df305b32-9bcf-4ead-9c92-ea219166a302-source-class-157b6acf-a1ac-45dc-94ff-1afab23f5579right-attr-class-157b6acf-a1ac-45dc-94ff-1afab23f5579-5ea660a4-6664-46a9-8aa2-7c884e9fff67-target",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498",
+      "sourceHandle": "right-attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-56229798-0058-4982-91d1-04ba9127b767-source",
+      "target": "class-597f4569-3eff-44bf-991c-1ced66b304af",
+      "targetHandle": "left-attr-class-597f4569-3eff-44bf-991c-1ced66b304af-a39814e3-298c-48ac-a3d4-a0f324e72f44-target",
+      "type": "relationship",
+      "data": {
+        "type": "relationship",
+        "lineStyle": "orthogonal",
+        "controlPoints": []
+      },
+      "id": "xy-edge__class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498right-attr-class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498-56229798-0058-4982-91d1-04ba9127b767-source-class-597f4569-3eff-44bf-991c-1ced66b304afleft-attr-class-597f4569-3eff-44bf-991c-1ced66b304af-a39814e3-298c-48ac-a3d4-a0f324e72f44-target",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-597f4569-3eff-44bf-991c-1ced66b304af",
+      "sourceHandle": "left-source",
+      "target": "class-67bd6c9f-4886-4c26-8d0a-32d0bb9ef498",
+      "targetHandle": "bottom-target",
+      "type": "association",
+      "data": {
+        "multiplicityA": "1..1",
+        "multiplicityB": "0..*",
+        "name": "",
+        "type": "association",
+        "roleA": "be activated",
+        "roleB": "concern",
+        "lineStyle": "orthogonal",
+        "controlPoints": [],
+        "parallelIndex": 0,
+        "parallelCount": 1
+      },
+      "id": "edge-cd627f01-e1a7-4d2b-a375-6ce3818c2271",
+      "selected": false
+    },
+    {
+      "interactionWidth": 20,
+      "source": "class-597f4569-3eff-44bf-991c-1ced66b304af",
+      "sourceHandle": "left-attr-class-597f4569-3eff-44bf-991c-1ced66b304af-ab396868-9ed8-4465-9b6c-a50b7961a226-source",
+      "target": "class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4",
+      "targetHandle": "right-attr-class-29b3db61-76a0-44d0-93f0-88e9bb6f9ef4-d8ee768e-f682-4451-a6fc-f95102190289-target",
+      "type": "relationship",
+      "data": {
+        "type": "relationship",
+        "lineStyle": "orthogonal",
+        "controlPoints": []
+      },
+      "id": "xy-edge__e5264b6c-c98f-41a3-8045-2bb3b9dff44f",
+      "selected": false
+    }
+  ],
+  "annotations": {
+    "conceptual": {
+      "items": []
+    },
+    "logical": {
+      "items": []
+    },
+    "physical": {
+      "items": []
+    }
+  }
+}
